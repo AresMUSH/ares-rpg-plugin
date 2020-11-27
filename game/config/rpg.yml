@@ -1,0 +1,5 @@
+---
+rpg:
+  public_sheets: true
+  sheet_format: 'text'
+  rpg_blurb: "Fill in your character sheet info and any notes about it."
