@@ -32,7 +32,7 @@ Configuration options can be found in game/config/rpg.yml.
 
 `rpg_blurb` - The instructions that appear above the traits web chargen controls.
 
-`public_sheets` - Set to 'true' to allow everyone to view sheets.  'false' will limit viewing to staff with the 'rpg_admin' permission.
+`public_sheets` - Set to 'true' to allow everyone to view sheets.  'false' will limit viewing to staff with the **`rpg_admin`** permission.
 
 `sheet_format` - Can be embed, url, or text. Embed is if you are embedding PDFs or frame-friendly web pages for your character sheets.  URL just links to a URL.  Text contains markdown text.
 

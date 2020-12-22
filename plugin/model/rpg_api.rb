@@ -22,7 +22,8 @@ module AresMUSH
       {
         sheet: Rpg.format_sheet_for_viewing(char),
         sheet_notes: Website.format_markdown_for_html(char.rpg_sheet_notes),
-        sheet_format: Global.read_config('rpg', 'sheet_format')
+        sheet_format: Global.read_config('rpg', 'sheet_format'),
+        can_view: true
       }
     end
     
