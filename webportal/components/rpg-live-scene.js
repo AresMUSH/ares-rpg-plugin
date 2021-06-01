@@ -14,7 +14,7 @@ export default Component.extend({
     rollDice() {
       let api = this.gameApi;
       let dice = this.diceString;
-      this.set('showRollDice', null);
+      this.set('showRollDice', false);
       this.set('diceString', '');
           
       if (!dice) {
