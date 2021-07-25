@@ -1,20 +1,20 @@
 <div id="systemrpg" class="tab-pane fade">
 
-{{#if char.rpg.can_view}}
+{{#if this.char.rpg.can_view}}
 
 <h3>Sheet</h3>
 
-  {{#if (eq char.rpg.sheet_format 'url')}}
-  <a href="{{char.rpg.sheet}}" target="_blank">{{char.rpg.sheet}}</a>
-  {{else if (eq char.rpg.sheet_format 'embed')}}
+  {{#if (eq this.char.rpg.sheet_format 'url')}}
+  <a href="{{this.char.rpg.sheet}}" target="_blank">{{this.char.rpg.sheet}}</a>
+  {{else if (eq this.char.rpg.sheet_format 'embed')}}
   <iframe src="{{char.rpg.sheet}}" class="rpg-embed-sheet" />
   {{else}}
-  <AnsiFormat @text={{char.rpg.sheet}} />
+  <AnsiFormat @text={{this.char.rpg.sheet}} />
   {{/if}}
 
 <h3>Notes</h3>
 
-<AnsiFormat @text={{char.rpg.sheet_notes}} />
+<AnsiFormat @text={{this.char.rpg.sheet_notes}} />
 
 {{else}}
   You are not allowed to view this sheet.
