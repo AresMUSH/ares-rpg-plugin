@@ -26,5 +26,20 @@ module AresMUSH
          char.rpg_sheet
        end
     end
+    
+    def self.uninstall_plugin(client)
+      begin 
+        Character.all.each do |c|
+          c.update(rpg_sheet: nil)
+          c.update(rpg_sheet_notes: nil)
+        end
+        
+         Manage.uninstall_plugin("rpg")
+         client.emit_success "Plugin uninstalled."
+      
+       rescue Exception => e
+         client.emit_failure "Error uninstalling plugin: #{e} backtrace=#{e.backtrace[0,10]}"
+       end
+    end
   end
 end
