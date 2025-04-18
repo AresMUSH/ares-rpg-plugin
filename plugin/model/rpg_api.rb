@@ -3,8 +3,8 @@ module AresMUSH
     def self.save_char(char, chargen_data)
       traits = {}
       
-      sheet = chargen_data[:rpg][:sheet]
-      notes = chargen_data[:rpg][:sheet_notes]
+      sheet = chargen_data['rpg']['sheet']
+      notes = chargen_data['rpg']['sheet_notes']
 
       
       char.update(rpg_sheet: Website.format_input_for_mush(sheet))
