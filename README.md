@@ -6,8 +6,6 @@
 
 See release notes to determine which versions of AresMUSH are compatible.
 
-> Note: This code has been run through its paces on a test server, but hasn't been playtested much on a real game yet.   The first game to implement this will receive extra technical support from Faraday to iron out any bugs.
-
 ## Overview
 
 This plugin is intended for use when you're using a RPG system without any other code. Sheets would be stored either in plain text or an embedded URL/PDF, and dice are rolled using the general 'dice' command (help dice). 
